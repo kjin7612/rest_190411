@@ -1,0 +1,25 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    #      ddl-auto: none
+    #      ddl-auto: validate
+    #      ddl-auto: update
+    #      ddl-auto: create-drop
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: true
+        format_sql: true
+###
+#   Tomcat Settings
+###
+server:
+  port: 8080
