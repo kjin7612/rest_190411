@@ -4,6 +4,7 @@ import org.springframework.hateoas.Resource;
 import org.springframework.hateoas.Resources;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -23,7 +24,9 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 
 @RestController
-class EmployeeController {
+class EmployeeController implements Serializable {
+//    private static final long serialVersionUID = SpringSecurityCoreVersion.SERIAL_VERSION_UID;
+
 
     private final EmployeeRepository repository;
 

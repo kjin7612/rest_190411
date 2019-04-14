@@ -1,0 +1,20 @@
+
+- [Thymeleaf] Spring + Thymeleaf 설정 시작
+[출처] [Thymeleaf] Spring + Thymeleaf 설정 시작|작성자 인큐
+URL=http://blog.naver.com/PostView.nhn?blogId=software705&logNo=220930543921
+
+- Spring Boot Thymeleaf Configuration Example
+URL=https://memorynotfound.com/spring-boot-thymeleaf-configuration-example/
+
+- spring4 + thymeleaf 템플릿엔진 lagacy html5 셋팅
+https://blog.hanumoka.net/2018/08/05/spring-20180805-spring4-thymeleaf-lagacy-html5/
+
+
+- [spring] Spring boot에서의 thymeleaf 재시작 없이 HTML 소스코드 반영
+http://blog.engintruder.com/182
+  출처: http://blog.engintruder.com/182 [I.K.Picture & IT Info.]
+
+
+- Spring Security 로그인 인증 구현
+https://minwan1.github.io/2017/04/22/2017-04-22-spring-security-implement/
+

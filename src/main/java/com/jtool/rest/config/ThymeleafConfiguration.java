@@ -15,9 +15,8 @@ import java.io.Serializable;
 
 @Configuration
 @Slf4j
-public class ThymeleafConfiguration implements Serializable{
+public class ThymeleafConfiguration{
 //	private static final long serialVersionUID = SpringSecurityCoreVersion.SERIAL_VERSION_UID;
-//	private Logger logger = LoggerFactory.getLogger(ThymeleafConfiguration.class);
 
 	public ThymeleafConfiguration() {}
 	

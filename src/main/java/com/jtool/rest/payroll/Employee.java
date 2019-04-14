@@ -5,10 +5,13 @@ import lombok.Data;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 @Data
 @Entity
-class Employee {
+class Employee implements Serializable {
+//    private static final long serialVersionUID = SpringSecurityCoreVersion.SERIAL_VERSION_UID;
+
 
     private @Id @GeneratedValue Long id;
     private String name;

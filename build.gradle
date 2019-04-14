@@ -33,7 +33,7 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-hateoas'
     compile 'org.springframework.boot:spring-boot-starter-mail'
     compile 'com.h2database:h2:1.4.197'
-    compile 'org.projectlombok:lombok:1.16.22'
+    compile 'org.projectlombok:lombok'
     compile 'org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE'
 
 //  Using for JSP
@@ -44,7 +44,7 @@ dependencies {
     compile 'org.thymeleaf:thymeleaf-spring4:3.0.0.RELEASE'
 
     testCompile 'com.jayway.jsonpath:json-path:2.4.0'
-    testCompile 'org.springframework.boot:spring-boot-starter-test'
+    testCompile 'org.springframework.boot:spring-boot-starter-test' 
 }
 
 

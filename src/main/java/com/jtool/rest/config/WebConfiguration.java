@@ -1,8 +1,6 @@
 package com.jtool.rest.config;
 
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -15,12 +13,11 @@ import java.io.Serializable;
 @EnableWebMvc
 @Slf4j
 public class WebConfiguration extends WebMvcConfigurerAdapter implements Serializable{
-//	private static final long serialVersionUID = SpringSecurityCoreVersion.SERIAL_VERSION_UID;
-//	private Logger logger = LoggerFactory.getLogger(WebConfiguration.class);
 
+//	private static final long serialVersionUID = SpringSecurityCoreVersion.SERIAL_VERSION_UID;
 
 	public WebConfiguration() {	}
-	
+
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler(
@@ -47,9 +44,9 @@ public class WebConfiguration extends WebMvcConfigurerAdapter implements Seriali
 
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
-//        registry.addViewController("/login").setViewName("login");
+        registry.addViewController("/login").setViewName("login");
         registry.addViewController("/index").setViewName("index");
-        
+
 //        logger.error("addViewControllers Error");
 		log.error("addViewControllers Error");
 	}
