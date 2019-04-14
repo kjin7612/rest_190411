@@ -19,10 +19,10 @@ spring:
         use_sql_comments: true
         format_sql: true
 # Using for JSP
-  mvc:
-    view:
-      prefix: /WEB-INF/jsp/
-      suffix: .jsp
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/jsp/
+#      suffix: .jsp
 ###
 #   Tomcat Settings
 ###
