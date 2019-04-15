@@ -1,0 +1,25 @@
+{
+  "name": "jtool",
+  "homepage": "https://github.com/kjin7612/rest_190411",
+  "authors": [
+    "jin <kjin7612@gmail.com>"
+  ],
+  "description": "jtool",
+  "main": "jtool",
+  "keywords": [
+    "jtool"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.4.0",
+    "bootstrap": "^4.3.1"
+  }
+}
