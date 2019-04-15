@@ -26,7 +26,7 @@ public class ThymeleafConfiguration{
         resolver.setTemplateEngine(templateEngine());
         resolver.setCharacterEncoding("UTF-8");
         log.error("ThymeleafConfiguration - viewResolver");
-        
+
         return resolver;
     }
 	
@@ -35,7 +35,7 @@ public class ThymeleafConfiguration{
         SpringTemplateEngine engine = new SpringTemplateEngine();
         engine.setTemplateResolver(templateResolver());
         log.error("ThymeleafConfiguration - templateEngine");
-        
+
         return engine;
     }
 
@@ -47,7 +47,7 @@ public class ThymeleafConfiguration{
         resolver.setTemplateMode(TemplateMode.HTML);
         resolver.setCharacterEncoding("UTF-8");
         log.error("ThymeleafConfiguration - templateResolver");
-        
+
         return resolver;
     }
     

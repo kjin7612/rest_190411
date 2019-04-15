@@ -1,0 +1,7 @@
+- Using Gradle and Bower to Manage JS/CSS Dependencies
+https://objectpartners.com/2015/04/29/using-gradle-and-bower-to-manage-jscss-dependencies/
+
+
+[Follow up to 'Combining Spring Boot with Bower dependencies']
+URL=https://nblair.github.io/2016/07/14/spring-boot-bower-follow-up/
+https://github.com/craigburke/client-dependencies-gradle
