@@ -1,5 +1,6 @@
 package com.jtool.rest.payroll;
 
+import lombok.extern.java.Log;
 import org.springframework.hateoas.Resource;
 import org.springframework.hateoas.Resources;
 import org.springframework.web.bind.annotation.*;
@@ -17,12 +18,16 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
  * curl -X PUT localhost:8080/employees/3 -H 'Content-type:application/json' -d '{"name": "Samwise Gamgee", "role": "ring bearer"}'
  * curl -X DELETE localhost:8080/employees/3
  * curl localhost:8080/employees/3
+ * REST의 개념
+ * https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
+ * http://websystique.com/spring-boot/spring-boot-rest-api-example/
  *
  */
 
 
 
 @RestController
+@Log
 class EmployeeController {
 
     private final EmployeeRepository repository;
@@ -34,8 +39,9 @@ class EmployeeController {
     // Aggregate root
 
     // tag::get-aggregate-root[]
+
     @GetMapping("/employees")
-    Resources<Resource<Employee>> all() {
+    public Resources<Resource<Employee>> all() {
 
         List<Resource<Employee>> employees = repository.findAll().stream()
                 .map(employee -> new Resource<>(employee,
@@ -46,6 +52,16 @@ class EmployeeController {
         return new Resources<>(employees,
                 linkTo(methodOn(EmployeeController.class).all()).withSelfRel());
     }
+
+//    Case 2 for GetMapping
+//    public ResponseEntity<List<Employee>> getEmployees(){
+//        List<Employee> employee = repository.findAll();
+//        if(employee.isEmpty()){
+//            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+//        }
+//        return new ResponseEntity<List<Employee>>(employee, HttpStatus.OK);
+//    }
+
     // end::get-aggregate-root[]
 
     @PostMapping("/employees")
